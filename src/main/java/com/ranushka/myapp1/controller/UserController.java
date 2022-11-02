@@ -14,7 +14,7 @@ public class UserController {
 
 	@GetMapping("/getUser")
 	public String getUser(){
-			return "getUser Name";
+			return "Ranushka";
 	}
 
 }
