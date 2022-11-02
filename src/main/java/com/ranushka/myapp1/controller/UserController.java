@@ -1,10 +1,7 @@
 package com.ranushka.myapp1.controller;
 
 import ch.qos.logback.core.boolex.EvaluationException;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "api/v1/user")
@@ -15,6 +12,21 @@ public class UserController {
 	@GetMapping("/getUser")
 	public String getUser(){
 			return "Ranushka";
+	}
+
+	@PostMapping("/saveUser")
+	public String saveUser(){
+		return "User Save!";
+	}
+
+	@PutMapping("/updateUser")
+	public String updateUser(){
+		return "update User";
+	}
+
+	@DeleteMapping("/deleteUser")
+	public String deleteUser(){
+		return "user deleted!";
 	}
 
 }
