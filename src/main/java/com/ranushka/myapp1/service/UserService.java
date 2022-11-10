@@ -15,7 +15,7 @@ public class UserService {
 	@Autowired
 	private UserRepo userRepo;
 
-	@Autowired
+	@Autowired(required = false)
 	private ModelMapper modelMapper;
 
 	public UserDTO saveUser(UserDTO userDTO){
